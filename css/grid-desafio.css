@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1er Hack para que 1rem sea igual a 10px */
+  line-height: 2; /* 2do Hack para separacion de lineas de los parrafos */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.contenedor {
+  /* background-color: black; */
+  max-width: 120rem;
+  margin: 0 auto;
+  /* justify-content: space-around; */
+  /* justify-content: space-around; */
+}
+
+.menu {
+  /* background-color: rgb(219, 118, 118); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.7rem 3.7rem;
+  background-color: brown;
+}
+
+img {
+  padding: 2rem 1.5rem;
+  width: 100px;
+  height: 63px;
+  border-radius: 2rem;
+}
+.btn {
+  margin-top: 1.5rem;
+  /* padding: 2rem 1.5rem; */
+  margin-left: 10rem;
+  border-radius: 1rem;
+  width: 90px;
+  height: 40px;
+}
+
+.links {
+  /* background-color: brown; */
+  align-items: center;
+  grid: 1 / 2;
+  justify-content: center;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.item {
+  background-color: rgb(185, 180, 180);
+  justify-content: center;
+}

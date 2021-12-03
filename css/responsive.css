@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1º Hack para que 1rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem; /* 2º Hack para la base sea de 16px */
+  line-height: 2; /* Separación entre los párrafos de un texto */
+}
+
+.centrar {
+  display: flex;
+  flex-direction: column;
+}
+
+.color {
+  background-color: #c4c4c4;
+}
+
+.margen {
+  margin: 2.4rem;
+}
+
+.meter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sacar2 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .centrar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .margen2 {
+    margin-left: 221px;
+    margin-right: 221px;
+    margin-top: 45px;
+  }
+  .sacar2 {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .centrar {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+  }
+  .centrar-recuadro {
+    margin-top: 254px;
+    display: flex;
+    justify-content: center;
+  }
+  .margen3 {
+    margin-right: 0px;
+  }
+  .margen4 {
+    margin-right: 21px;
+    margin-left: 21px;
+  }
+  .margen5 {
+    margin-left: 0px;
+  }
+  .sacar {
+    display: none;
+  }
+  .separar2 {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 769px) {
+  .aparece {
+    display: flex;
+  }
+}
